@@ -1,0 +1,13 @@
+<h3>Create new Friend</h3>
+
+<div id="friend_form">
+  <%= form_for @friend do |f| %>
+  <%= f.label :name %><br>
+  <%= f.text_area(:name, class: "form_text", cols: 40, rows: 40) %>
+  <%= f.submit %>
+  <%end%>
+</div>
+
+<div id="live_preview">
+  <p>Live Preview</p>
+</div>
